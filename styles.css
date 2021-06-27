@@ -1,0 +1,366 @@
+
+/* For mobile */
+body {
+    background-color: hsl(270, 20%, 96%);
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    
+  }
+  
+  .top-shape {
+    position:absolute;
+    left: -25%;
+    z-index: -1;
+    height: 550px;
+    width: 75%;
+    background: rgb(233,66,255);
+  background: linear-gradient(120deg, rgba(233,66,255,1) 15%, rgba(136,56,255,1) 70%);
+    border-radius: 0px 0px 1400px 550px;
+  }
+  
+  .bottom-shape {
+    position:fixed;
+    right: -25%;
+    bottom: -60px;
+    z-index: -1;
+    height: 550px;
+    width: 75%;
+    background-color: rgba(224, 210, 227, 0.42);
+    border-radius: 1400px 550px 0px 0px;
+  }
+
+  .main-content {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      align-items: center;
+     
+  }
+
+  .container {
+    background-color: #fff;
+     height: 525px;
+    width: 250px;
+
+    border-radius: 30px;
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 10px solid white;
+    flex-direction: column;
+    margin-top: 70px;
+
+  }
+  
+  header {
+    height: 5em;
+    width: 100%;
+    background: rgb(233,66,255);
+  background: linear-gradient(261deg, rgba(233,66,255,1) 35%, rgba(136,56,255,1) 100%);
+    border-radius: 20px 20px 5px 5px;
+    display: block;
+  }
+  
+  .top {
+    width: 50%;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 5px 5px 15px 15px;
+    margin-top: -10px;
+    position: relative;
+    left: 25%;
+   
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrow {
+    color: #fff;
+    position: relative;
+    left: 15px;
+  }
+  
+  .circle {
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    background-color: #fff;
+    position: relative;
+    right: 15px;
+    border: 1.5px solid #ccdbfd;
+  }
+  
+  .title {
+    color: hsl(270, 20%, 96%);
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    right: 40px;
+  }
+  
+  span {
+    display: block;
+    font-size: 8px;
+    letter-spacing: 0.2px;
+    margin-top: 3px;
+    color: hsl(276, 100%, 81%);
+  }
+  
+  .options {
+    width: 10px;
+    height: 12px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  
+  .dot {
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  .message-body {
+    background-color: hsl(270, 20%, 96%);
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .message-text {
+    font-size: 8px;
+    max-width: 45%;
+    color: hsl(276, 55%, 52%);
+    padding: 0px 10px;
+    line-height: 1.3em;
+  }
+  
+  
+  
+  .left:first-child, .right:first-child{
+    margin-top: 10px;
+    
+  } 
+  
+  .left {
+    margin: 5px 10px;
+    background-color: rgba(224, 210, 227, 0.42);
+    border-radius: 10px 10px 10px 5px;
+    
+  }
+  
+  .right {
+    align-self: flex-end;
+    margin: 5px 10px;
+    color: hsl(271, 15%, 43%);
+    background-color: white;
+    border-radius: 10px 10px 5px 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  }
+  
+  .message-img {
+    display: flex;
+    max-width: 55%;
+    background-color: inherit;
+    margin-right:30px;
+    box-shadow: none;
+  }
+  
+  .img {
+    width: 45px;
+    height: 45px;
+    margin: 5px 4px;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .message-invoice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    max-width: 60%;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0px 10px;
+    background: rgb(233,66,255);
+  background: linear-gradient(45deg, rgba(233,66,255,1) 20%, rgba(136,56,255,1) 80%); 
+    border-radius: 10px 10px 10px 5px;
+  }
+  
+  /* Hide existing radio button */
+  .message-invoice input {
+    border: 3px solid red;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .radio__control {
+    cursor: pointer;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 0.1em solid;
+    position: relative;
+    top:-6px
+  }
+  
+  .radio {
+    display: flex;
+    align-items: center;
+  
+  }
+  
+  .radio__label {
+    align-self: center;
+    margin-left: 10px;
+    font-size: 8px;
+    color: hsl(270, 20%, 96%);
+    
+  }
+  
+  .message-invoice h2 {
+    font-size: 14px;
+    margin: 10px 0px;
+    
+  }
+  
+  .message-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+  }
+  
+  .message-field input {
+    border-radius: 50px;
+    height: 35px;
+    width: 90%;
+    border: none;
+    margin-bottom: 0px;
+  
+  }
+  
+  
+  .message-field .btn {
+    height: 28px;
+    width: 28px;
+    border-radius: 28px;
+    border: none;
+    background-color: hsl(271, 36%, 24%);
+    color: white;
+   display: flex;
+    position: absolute;
+  transform: translateX(95px);
+  
+  }
+  
+  .btn p {
+    align-self: center;
+      margin: auto;
+font-weight: 400;
+font-size: 14px;
+  }
+  
+   ::placeholder {
+     font-size: 10px;
+   color: #dee2e6; 
+     padding-left: 20px;
+     
+  }
+
+  .info {
+     margin: 30px 70px;
+  }
+  
+  .info h1 {
+    color: hsl(271, 36%, 24%);
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+  
+  .info p {
+    margin: 10px;
+    text-align: center;
+    color: hsl(270, 7%, 64%);
+    line-height: 1.8em;
+    font-size: 18px;
+  }
+
+  .attribution {
+      color: hsl(270, 7%, 64%);
+  }
+
+  .attribution>a:link {
+      color: hsl(276, 55%, 52%);
+      text-decoration: none;
+  }
+
+  @media only screen and (min-width: 1400px) {
+      /* For desktop */
+
+      .main-content {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          margin:40px 130px 0px 130px;
+          
+      }
+
+      .info {
+          width: 450px;
+          margin-left: 20px;
+         position: relative;
+         left: 90px;
+      }
+
+      .info h1 {
+          text-align: left;
+          font-size: 40px;
+          font-weight: 500;
+      }
+
+      .info p {
+          text-align: left;
+          margin: 0px;
+          font-size: 16px;
+        
+      }
+
+      .attribution {
+          margin-top: 20px;
+      }
+
+      .top-shape {
+          position: fixed;
+          left: -50px;
+          height: 80%;
+          width: 450px;
+          border-radius: 0px 0px 550px 550px;
+      }
+
+      .bottom-shape {
+          position: fixed;
+          bottom: 0;
+          right: -80px;
+          height: 80%;
+          width: 450px;
+          border-radius: 550px 550px 0px 0px;
+      }
+  }
